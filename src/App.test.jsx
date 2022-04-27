@@ -21,6 +21,8 @@ const user = {
   color: 'crimson',
 }
 
+global.fetch = fetch;
+
 // 🚨 Create your server
 const server = setupServer(
   rest.get('https://uzgiamkrbapxufnwdrja.supabase.co/rest/v1/users', (req, res, ctx) => {
